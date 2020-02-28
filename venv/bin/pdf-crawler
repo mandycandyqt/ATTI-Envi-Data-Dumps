@@ -1,0 +1,12 @@
+#!/Users/amandaboltax/Code/atti/ATTI-Envi-Data-Dumps/venv/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'pdf-crawler','console_scripts','pdf-crawler'
+__requires__ = 'pdf-crawler'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('pdf-crawler', 'console_scripts', 'pdf-crawler')()
+    )
